@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>School Examination Timetable</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b55;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 25px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            color: #243b55;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 14px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #243b55;
+            color: white;
+        }
+
+        .merged-heading {
+            background-color: #176f78;
+            color: white;
+            font-size: 18px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f0f4f8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px 5px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>School Examination Timetable</h1>
+
+        <p>
+            Academic Year 2026-2027
+        </p>
+
+        <p>
+            Please check the examination dates, subjects,
+            timings, and examination room carefully.
+        </p>
+    </header>
+
+    <main>
+
+        <table>
+
+            <caption>
+                Final Examination Timetable - December 2026
+            </caption>
+
+            <thead>
+
+                <!-- Merged heading row using colspan -->
+                <tr>
+                    <th colspan="4" class="merged-heading">
+                        School Final Examination Schedule
+                    </th>
+                </tr>
+
+                <!-- Table column headings -->
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Room</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <!-- One date shared by two exams using rowspan -->
+                    <th scope="rowgroup" rowspan="2">
+                        01 December 2026
+                    </th>
+
+                    <td>Mathematics</td>
+                    <td>09:00 AM - 12:00 PM</td>
+                    <td>Room 101</td>
+                </tr>
+
+                <tr>
+                    <td>English</td>
+                    <td>01:00 PM - 03:00 PM</td>
+                    <td>Room 102</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">03 December 2026</th>
+                    <td>Science</td>
+                    <td>09:00 AM - 12:00 PM</td>
+                    <td>Room 103</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">05 December 2026</th>
+                    <td>Computer Science</td>
+                    <td>09:00 AM - 12:00 PM</td>
+                    <td>Room 104</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">08 December 2026</th>
+                    <td>Social Studies</td>
+                    <td>09:00 AM - 12:00 PM</td>
+                    <td>Room 105</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">10 December 2026</th>
+                    <td>Environmental Studies</td>
+                    <td>09:00 AM - 11:00 AM</td>
+                    <td>Room 106</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <section>
+            <h2>Important Instructions</h2>
+
+            <ul>
+                <li>Students must arrive at least 30 minutes before the exam.</li>
+                <li>Bring your school identity card and examination materials.</li>
+                <li>Mobile phones are not allowed in the examination room.</li>
+                <li>Follow the instructions given by the examination supervisor.</li>
+                <li>Check your examination room before entering.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            School Examination Department |
+            Academic Year 2026-2027
+        </p>
+    </footer>
+
+</body>
+
+</html>
