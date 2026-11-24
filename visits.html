@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your visit to Green Valley Farmers Market and share your feedback.">
+    <title>Green Valley Farmers Market | Visit Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Plan Your Visit</h1>
+        <p>We look forward to welcoming you to our farmers market!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vendors.html">Our Vendors</a></li>
+            <li><a href="visit.html" aria-current="page">Plan Your Visit</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Visit introduction -->
+        <section>
+            <h2>Visit Green Valley Farmers Market</h2>
+
+            <p>
+                Spend your weekend exploring fresh local products,
+                meeting farmers, and enjoying a friendly
+                community shopping experience.
+            </p>
+
+            <img
+                src="images/farmers-market.svg"
+                alt="Farmers market with stalls selling fresh vegetables and fruits"
+                width="800"
+                height="350"
+            >
+        </section>
+
+        <!-- Market timings -->
+        <section>
+            <h2>Market Opening Hours</h2>
+
+            <ul>
+                <li>Saturday: 8:00 AM - 2:00 PM</li>
+                <li>Sunday: 8:00 AM - 2:00 PM</li>
+                <li>Monday to Friday: Closed</li>
+            </ul>
+        </section>
+
+        <!-- Visitor instructions -->
+        <section>
+            <h2>Tips for Visitors</h2>
+
+            <p>
+                Follow these simple tips to make your
+                farmers market visit enjoyable.
+            </p>
+
+            <ol>
+                <li>Arrive early for the freshest products.</li>
+                <li>Bring reusable shopping bags.</li>
+                <li>Carry cash for convenient shopping.</li>
+                <li>Explore different vendor stalls.</li>
+                <li>Ask vendors about seasonal products.</li>
+            </ol>
+        </section>
+
+        <!-- Visitor facilities -->
+        <section>
+            <h2>Facilities Available</h2>
+
+            <ul>
+                <li>Parking area for visitors</li>
+                <li>Drinking water facility</li>
+                <li>Seating area</li>
+                <li>Family-friendly shopping space</li>
+                <li>Reusable shopping bags available at selected stalls</li>
+            </ul>
+        </section>
+
+        <!-- Feedback form -->
+        <section id="feedback">
+
+            <h2>Share Your Feedback</h2>
+
+            <p>
+                We value your opinion. Please complete the
+                following form to share your experience.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="visitor-name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="visitor-name"
+                        name="visitor-name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="visitor-email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="visitor-email"
+                        name="visitor-email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="visit-date">Date of Visit</label>
+
+                    <input
+                        type="date"
+                        id="visit-date"
+                        name="visit-date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rate Your Experience</label>
+
+                    <select id="rating" name="rating" required>
+                        <option value="">Select your rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Your Feedback</label>
+
+                    <textarea
+                        id="comments"
+                        name="comments"
+                        rows="5"
+                        placeholder="Tell us about your experience..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Submit Feedback</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Green Valley Farmers Market. All rights reserved.</p>
+        <p>Thank you for supporting local farmers!</p>
+    </footer>
+
+</body>
+</html>
